@@ -14,6 +14,6 @@ The hypothesis used for calculation are :
 ##Demo 
 to be uploaded
 
-References: 
+**References: **
 * (1) : http://www.phdnm.org/uploads/3/0/0/1/3001973/sonderkommandos.htm#_Toc309033238
 * (2) : http://intra-science.anaisequey.com/mathematiques/mathematiques/141-volume-surface-population
