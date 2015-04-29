@@ -3,29 +3,29 @@
         <div class="col-xs-6">
         	<div class="panel panel-primary">
 			  <div class="panel-heading">
-			    <h3 class="panel-title"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>&nbsp;&nbsp;Dans quoi etes vous ?</h3>
+			    <h3 class="panel-title"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>&nbsp;&nbsp;{{ 'HOME_WHERE' | translate}}</h3>
 			  </div>
 			  <div class="panel-body">
 			  	<p>
 	            <div class="btn-group" data-toggle="buttons">
 	                <label class="btn btn-primary" btn-radio="'rectangle'" ng-change="change()" ng-model="shape">
-	                    Rectangle
+	                    {{ 'HOME_SHAPE_RECTANGLE' | translate}}
 	                </label>
 	                <label class="btn btn-primary" btn-radio="'sphere'" ng-change="change()" ng-model="shape">
-	                    Sphere
+	                    {{ 'HOME_SHAPE_SPHERE' | translate}}
 	                </label>
 	                <label class="btn btn-primary" btn-radio="'cylindre'" ng-change="change()" ng-model="shape">
-	                    Cylindre
+	                    {{ 'HOME_SHAPE_CYLINDER' | translate}}
 	                </label>
 	                <label class="btn btn-primary" btn-radio="''" ng-change="change()" ng-model="shape">
-	                    Volume connu
+	                    {{ 'HOME_SHAPE_KNOWN' | translate}}
 	                </label>
 	            </div>
 	            </p>
 	            <!-- Volume connu -->
 				<form class="form-horizontal" ng-show="shape === ''">
 				  <div class="form-group">
-				    <label for="volume" class="col-sm-2 control-label">Volume</label>
+				    <label for="volume" class="col-sm-2 control-label">{{ 'HOME_VOLUME' | translate}}</label>
 				    <div class="col-xs-6">
 				      <div class="input-group">
 	                    <input type="number" class="form-control" id="volume" ng-model="volume" required min="0">
@@ -37,7 +37,7 @@
 				<!-- Sphere -->
 				<form class="form-horizontal" ng-show="shape === 'sphere'">
 				  <div class="form-group">
-				    <label for="Rayon" class="col-sm-2 control-label">Rayon</label>
+				    <label for="Rayon" class="col-sm-2 control-label">{{ 'HOME_RADIUS' | translate}}</label>
 				    <div class="col-xs-6">
 				      <div class="input-group">
 	                    <input type="number" class="form-control" id="Rayon" ng-model="rayon" required min="0">
@@ -49,7 +49,7 @@
 				<!-- Cylindre -->
 				<form class="form-horizontal" ng-show="shape === 'cylindre'">
 				  <div class="form-group">
-				    <label for="hauteur" class="col-sm-2 control-label">Hauteur</label>
+				    <label for="hauteur" class="col-sm-2 control-label">{{ 'HOME_HEIGHT' | translate}}</label>
 				    <div class="col-xs-6">
 				      <div class="input-group">
 	                    <input type="number" id="hauteur" ng-model="hauteur" min="0" required class="form-control">
@@ -58,7 +58,7 @@
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="rayon" class="col-sm-2 control-label">Rayon</label>
+				    <label for="rayon" class="col-sm-2 control-label">{{ 'HOME_RADIUS' | translate}}</label>
 				    <div class="col-xs-6">
 				      <div class="input-group">
 	                    <input type="number" id="rayon" ng-model="rayon" min="0" required class="form-control">
@@ -70,7 +70,7 @@
 				<!-- Rectangle -->
 				<form class="form-horizontal" ng-show="shape === 'rectangle'">
 				  <div class="form-group">
-				    <label for="largeur" class="col-sm-2 control-label">Largeur</label>
+				    <label for="largeur" class="col-sm-2 control-label">{{ 'HOME_WIDTH' | translate}}</label>
 				    <div class="col-xs-6">
 				      <div class="input-group">
 	                    <input type="number" id="largeur" ng-model="largeur" min="0" required class="form-control">
@@ -79,7 +79,7 @@
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="longueur" class="col-sm-2 control-label">Longueur</label>
+				    <label for="longueur" class="col-sm-2 control-label">{{ 'HOME_LENGTH' | translate}}</label>
 				    <div class="col-xs-6">
 				      <div class="input-group">
 	                    <input type="number" id="longueur"  ng-model="longueur" min="0" required class="form-control">
@@ -88,7 +88,7 @@
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="hauteur2" class="col-sm-2 control-label">Hauteur</label>
+				    <label for="hauteur2" class="col-sm-2 control-label">{{ 'HOME_HEIGHT' | translate}}</label>
 				    <div class="col-xs-6">
 				      <div class="input-group">
 	                    <input type="number" id="hauteur2" ng-model="hauteur" min="0" required class="form-control ">
@@ -103,13 +103,13 @@
         <div class="col-xs-6">
         	<div class="panel panel-primary">
 			  <div class="panel-heading">
-			    <h3 class="panel-title"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;Combien êtes vous ?</h3>
+			    <h3 class="panel-title"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;{{ 'HOME_HOW_MANY' | translate}}</h3>
 			  </div>
 			  <div class="panel-body">
-			  	 <p>Ne comptez que les personnes qui respirent.</p>
+			  	 <p>{{ 'HOME_HOW_MANY_CAUTION' | translate}}</p>
 			  	 <form class="form-horizontal" >
 				  <div class="form-group">
-				    <label for="nbPersonne" class="col-sm-2 control-label">Nombre</label>
+				    <label for="nbPersonne" class="col-sm-2 control-label">{{ 'HOME_NUMBER' | translate}}</label>
 				    <div class="col-xs-6">
 				      <div class="input-group">
 	                    <input type="number" id="nbPersonne" ng-model="nbPersonne" min="1" required class="form-control">
@@ -121,10 +121,10 @@
 				  </div>
 				</form>
 				<p>
-			  	 Ne paniquez pas ! La panique augmente votre consommation d'air.
+			  	 {{ 'HOME_PANIC' | translate}}
 			  	 </p>
 			  	 <div class="alert alert-warning" role="alert" ng-show="computeVolume() > 0 && !isEnoughSpace()">
-			        <strong>Warning!</strong> Il est improbable que vous soyez aussi nombreux.
+			        <strong>{{ 'HOME_WARNING' | translate}}</strong> {{ 'HOME_WANRING_DETAILS' | translate}}
 			    </div>
 			  </div>
 			</div>
@@ -135,7 +135,7 @@
 			<div class="panel panel-danger">
                 <div class="panel-heading">
 
-                  <h3 class="panel-title"><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>&nbsp;&nbsp;Décompte</h3>
+                  <h3 class="panel-title"><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>&nbsp;&nbsp;{{ 'HOME_COUNTDOWN' | translate}}</h3>
                 </div>
                 <div class="panel-body">
                 	<p class="text-center lead" ng-show="timerRunning">
@@ -144,7 +144,8 @@
                 	<p class="text-center" ng-hide="timerRunning">
                 		<button type="button" class="btn btn-danger " ng-disabled="computeTimeLeft() == 0"  ng-click="startTimer()">
                 			<span class="glyphicon glyphicon-play" aria-hidden="true"></span>&nbsp;&nbsp;
-                			Lancer le décompte avant asphyxie</button>
+                			{{ 'HOME_BTN_TIMER' | translate}}
+                		</button>
                 	</p>
                 </div>
             </div>

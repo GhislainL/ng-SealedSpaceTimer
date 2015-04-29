@@ -10,6 +10,7 @@ The hypothesis used for calculation are :
 * Angular-UI : https://angular-ui.github.io/
 * Bootstrap
 * The Bootstrap theme used is United provided by Bootswatch : https://bootswatch.com/united/
+* Angular-Translate : http://angular-translate.github.io/
 
 ##Demo 
 to be uploaded
