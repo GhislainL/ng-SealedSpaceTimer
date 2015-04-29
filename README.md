@@ -13,7 +13,7 @@ The hypothesis used for calculation are :
 * Angular-Translate : http://angular-translate.github.io/
 
 ##Demo 
-to be uploaded
+http://blog.ghislain-lerda.com/demo/ng-SealedSpaceTimer/index.html
 
 **References:**
 * (1) : http://www.phdnm.org/uploads/3/0/0/1/3001973/sonderkommandos.htm#_Toc309033238
