@@ -22,5 +22,6 @@ angular.module('MyApp', ['timer','ngRoute','ui.bootstrap','pascalprecht.translat
       suffix: '.json'
     });
     $translateProvider.preferredLanguage('fr');
+    $translateProvider.useSanitizeValueStrategy('escaped');
   }
 ]);
