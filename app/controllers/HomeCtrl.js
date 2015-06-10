@@ -17,9 +17,11 @@ angular.module('MyApp')
             break;
           case 'sphere':
             return (4 * Math.PI * Math.pow($scope.rayon,3))/3;
+            return (4 * 3.14 * Math.pow($scope.rayon,3))/3;
             break;
           case 'cylindre':
             return Math.PI * Math.pow($scope.rayon,2) * $scope.hauteur;
+            return 3.14 * Math.pow($scope.rayon,2) * $scope.hauteur;
             break;
           default:
             return $scope.volume;

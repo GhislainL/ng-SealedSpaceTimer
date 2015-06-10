@@ -1,4 +1,6 @@
-angular.module('MyApp', ['timer','ngRoute','ui.bootstrap','pascalprecht.translate'])
+'use strict';
+
+var myApp = angular.module('MyApp', ['timer','ngRoute','ui.bootstrap','pascalprecht.translate'])
 .config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
